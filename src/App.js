@@ -1,27 +1,51 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Auth from './compnents/Autherization/autherization';
+import Nav from './compnents/Nav/nav';
+import {BrowserRouter as Router,} from 'react-router-dom';
+import Footer from './compnents/footer/footer';
 
-class App extends Component {
-  render() {
+class App extends Component 
+{
+  state =
+  {
+    sessionToken: ''
+  }
+
+  componentWillMount()
+  {
+    const token = localStorage.getItem("token");
+    if(token && !this.state.sessionToken)
+    {
+      this.setState({sessionToken: token})
+    }
+  }
+
+  removeSessionToken = () =>
+  {
+    this.setState({sessionToken: ''})//sets token to undefined, removes it
+  }
+
+  storeSessionToken = (token) =>
+  {
+    this.setState({sessionToken: token})
+  }
+
+  viewModifier()
+  {
+    return(this.state.sessionToken) ? <Nav token = {this.state.sessionToken} logout={this.removeSessionToken}/> : <Auth tokenHandler={this.storeSessionToken}/>
+  }
+
+  render() 
+  {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+    <div className="App">
+        <Router>{this.viewModifier()}</Router>
+        <div className="footer">
+          <Footer/>
+        </div>
+     </div>
+    )
   }
 }
 

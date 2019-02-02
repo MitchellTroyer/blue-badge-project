@@ -1,0 +1,23 @@
+.home
+{
+    position: relative;
+    top: 8em;
+    right: 42%;
+}
+
+th
+{
+    height: 3em;
+}
+
+th, td
+{
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+
+.mainTable
+{
+    border: 1px solid black;
+    width: 65em;
+}

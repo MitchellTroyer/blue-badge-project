@@ -1,0 +1,123 @@
+.create
+{
+    position: relative;
+    top: 8em;
+    right: 70%;
+    background-color: aliceblue;
+    width: 155%;
+    padding: 1em;
+    box-shadow: 4px 7px 30px black;
+    margin-bottom: 2em;
+}
+
+.createInventory
+{
+    position: relative;
+    top: 7em;
+    right: 70%;
+    background-color: aliceblue;
+    width: 155%;
+    height: 10em;
+    padding: 1em;
+    box-shadow: 4px 7px 30px black;
+    margin-bottom: 2em;
+}
+
+.createBackstory
+{
+    position: relative;
+    top: 6em;
+    right: 70%;
+    background-color: aliceblue;
+    width: 155%;
+    height: 10em;
+    padding: 1em;
+    box-shadow: 4px 7px 30px black;
+    margin-bottom: 2em;
+}
+
+.InventoryText
+{
+    width: 96%;
+    height: 50%;
+}
+
+.save
+{
+    float: right;
+    margin: 1em;
+    width: 13%;
+    height: 3em;
+}
+
+.th
+{
+    width: 19%;
+}
+
+th
+{
+    border: 1px solid black; 
+    padding: .4em;
+    background-color: brown;
+    color: aliceblue;
+}
+
+.Table
+{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 2px;
+    padding: .5em;
+    table-layout: fixed;
+}
+
+.skillpoints
+{
+    width: 96%;
+    height: 1.5em;
+}
+
+.skillpoint
+{
+    width: 96%;
+    height: 1.5em;
+    text-align: center;
+}
+
+.skillpointAB
+{
+    width: 40%;
+    height: 1em;
+    text-align: center;
+}
+
+.AB
+{
+    border: none;
+}
+
+.char-level
+{
+    width: 96%;
+    height: 4em;
+    text-align: center;
+}
+
+
+.update, .delete
+{
+    width: 100%;
+    height: 3em;
+}
+
+.attribute
+{
+    width: 96%;
+    height: 2em;
+}
+
+.blank
+{
+    border: none;
+}

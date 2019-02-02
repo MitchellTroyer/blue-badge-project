@@ -1,0 +1,19 @@
+.card
+{
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    border: 2.5px solid black;
+    border-radius: 3px;
+    padding-bottom: 1em;
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 2em;
+    background-color: aliceblue;
+    text-align: center;
+}
+#toggle
+{
+    margin-top: 2em;
+}

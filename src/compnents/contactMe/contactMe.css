@@ -1,0 +1,29 @@
+.mainbody
+{
+    background-color: aliceblue;
+    position: relative;
+    top: 125%;
+    right: 40%;
+    width: 45em;
+    padding: 4em;
+}
+
+.headers
+{
+    text-align: center;
+}
+
+.info
+{
+    margin: .5em;
+}
+
+.wrap
+{
+    margin-top: 2em;
+}
+
+.form
+{
+    width: 20em;
+}
