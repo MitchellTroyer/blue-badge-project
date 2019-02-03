@@ -21,11 +21,12 @@ class Home extends Component
     fetch(`${APIURL}/CharacterMain/allSheets`, 
       {
         method: 'GET',
-        header:
+        headers:
         {'Content-Type' : 'application/json',
         "Authorization" : this.props.token},
       })
-      .then(response => response.json())
+      .then(response => console.log(response.json()))
+      //.then(json => this.setState({characters: json}))
       .catch(err => console.log(err))
   }
 

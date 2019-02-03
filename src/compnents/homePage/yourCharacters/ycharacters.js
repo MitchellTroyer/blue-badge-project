@@ -5,6 +5,7 @@ const yourCharacters = (props) =>
     return(
     <tr>
         <td>{props.character.characterName}</td>
+        <td><button>Open</button></td>
     </tr>
     )
 }
