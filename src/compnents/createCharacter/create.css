@@ -10,6 +10,17 @@
     margin-bottom: 2em;
 }
 
+.create_modal
+{
+    position: relative;
+    right: 28%;
+    background-color: aliceblue;
+    width: 155%;
+    padding: 1em;
+    box-shadow: 4px 7px 30px black;
+    margin-bottom: 2em;
+}
+
 .createInventory
 {
     position: relative;
@@ -28,6 +39,30 @@
     position: relative;
     top: 6em;
     right: 70%;
+    background-color: aliceblue;
+    width: 155%;
+    height: 10em;
+    padding: 1em;
+    box-shadow: 4px 7px 30px black;
+    margin-bottom: 10em;
+}
+
+.createInventory_modal
+{
+    position: relative;
+    right: 28%;
+    background-color: aliceblue;
+    width: 155%;
+    height: 10em;
+    padding: 1em;
+    box-shadow: 4px 7px 30px black;
+    margin-bottom: 2em;
+}
+
+.createBackstory_modal
+{
+    position: relative;
+    right: 28%;
     background-color: aliceblue;
     width: 155%;
     height: 10em;

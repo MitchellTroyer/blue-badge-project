@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import APIURL from '../../../../helper/envirnment';
+import './modal';
 
 class CharModals extends Component {
   constructor(props) 
@@ -96,7 +97,7 @@ class CharModals extends Component {
           <ModalHeader toggle={this.toggle}></ModalHeader>
           <ModalBody>
               <div>
-            <form className="create">
+            <form className="create_modal">
             <button className="save" onClick = {this.handleUpdate}>Update Character</button>
             <button className="save" onClick = {this.handleDelete}>Delete</button>
                 <table className="Table">
@@ -204,11 +205,11 @@ class CharModals extends Component {
                 </tbody>
                 </table>
             </form>
-                <div className="createInventory">
+                <div className="createInventory_modal">
                 <h2>Inventory</h2>
                     <textarea value={this.state.inventory} className="InventoryText" rows="7" name="inventory" onChange={this.handleChange}></textarea>
                 </div>
-                <div className="createBackstory">
+                <div className="createBackstory_modal">
                 <h2>Backstory</h2>
                     <textarea value={this.state.backstory} className="InventoryText" rows="7" name="backstory" onChange={this.handleChange}></textarea>
                 </div>
