@@ -6,6 +6,7 @@
     right: 40%;
     width: 45em;
     padding: 4em;
+    margin-bottom: 7em;
 }
 
 .headers
@@ -26,4 +27,5 @@
 .form
 {
     width: 20em;
+    margin-bottom: .5em;
 }

@@ -1,7 +1,7 @@
 .create
 {
     position: relative;
-    top: 8em;
+    top: 9em;
     right: 70%;
     background-color: aliceblue;
     width: 155%;
@@ -13,7 +13,7 @@
 .createInventory
 {
     position: relative;
-    top: 7em;
+    top: 7.5em;
     right: 70%;
     background-color: aliceblue;
     width: 155%;
@@ -33,13 +33,13 @@
     height: 10em;
     padding: 1em;
     box-shadow: 4px 7px 30px black;
-    margin-bottom: 2em;
+    margin-bottom: 10em;
 }
 
 .InventoryText
 {
     width: 96%;
-    height: 50%;
+    height: 35%;
 }
 
 .save

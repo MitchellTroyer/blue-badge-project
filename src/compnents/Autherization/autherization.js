@@ -38,7 +38,7 @@ class Auth extends Component
         return(
                 <div className="card">
                     {this.viewModifier()}
-                    <button onClick={this.toggle} className="button" id="toggle">Toggle: Login/signUp</button><br/>
+                    <button onClick={this.toggle} id="toggle">Toggle: Login/signUp</button><br/>
                 </div>
     )}
 }

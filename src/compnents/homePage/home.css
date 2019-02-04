@@ -3,6 +3,7 @@
     position: relative;
     top: 8em;
     right: 42%;
+    background: white;
 }
 
 th
@@ -19,5 +20,10 @@ th, td
 .mainTable
 {
     border: 1px solid black;
-    width: 65em;
+    width: 50em;
+}
+
+.character
+{
+    padding: 2em;
 }
