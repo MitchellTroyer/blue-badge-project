@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import APIURL from '../../../../helper/envirnment';
-import './modal';
 
 class CharModals extends Component {
   constructor(props) 
@@ -29,8 +28,8 @@ class CharModals extends Component {
             flaws: this.props.character.flaws,
             strength: this.props.character.strength,
             strengthAbilityScore: this.props.character.strengthAbilityScore,
-            dexterity: this.props.character.dexerity,
-            dexerityAbilityScore: this.props.character.dexerityAbilityScore,
+            dexterity: this.props.character.dexterity,
+            dexterityAbilityScore: this.props.character.dexterityAbilityScore,
             constitution: this.props.character.constitution,
             constitutionAbilityScore: this.props.character.constitutionAbilityScore, 
             intelligence: this.props.character.intelligence,
@@ -73,7 +72,7 @@ class CharModals extends Component {
         })
     }
 
-    handleUpdate = (event, chara) =>
+    handleUpdate = (event) =>
     {
         event.preventDefault()
         fetch(`${APIURL}/CharacterMain/update/${this.props.character.id}`,
@@ -85,8 +84,6 @@ class CharModals extends Component {
                 ),
             body: JSON.stringify(
                 { 
-                    character:
-                    {
                         characterName: this.state.characterName,
                         class: this.state.class,
                         race: this.state.race,
@@ -105,8 +102,8 @@ class CharModals extends Component {
                         flaws: this.state.flaws,
                         strength: this.state.strength,
                         strengthAbilityScore: this.state.strengthAbilityScore,
-                        dexterity: this.state.dexerity,
-                        dexerityAbilityScore: this.state.dexerityAbilityScore,
+                        dexterity: this.state.dexterity,
+                        dexterityAbilityScore: this.state.dexterityAbilityScore,
                         constitution: this.state.constitution,
                         constitutionAbilityScore: this.state.constitutionAbilityScore, 
                         intelligence: this.state.intelligence,
@@ -117,7 +114,6 @@ class CharModals extends Component {
                         charismaAbilityScore: this.state.charismaAbilityScore,
                         inventory: this.state.inventory,
                         backstory: this.state.backstory
-                    }
                 }),
         })
         
@@ -165,9 +161,9 @@ class CharModals extends Component {
                     </tr>
                     <tr className="stats">
                         <td className="blank"></td>
-                        <th>Health Points (HP)</th>
-                        <th>Hit Dice (HD)</th>
-                        <th>Death Saves (DS)</th>
+                        <th>Health Points</th>
+                        <th>Hit Dice</th>
+                        <th>Death Saves</th>
                         <th className="trait">Personality traits</th>
                         <th className="trait">Bonds</th>
                     </tr>
