@@ -79,11 +79,46 @@ class CharModals extends Component {
         fetch(`${APIURL}/CharacterMain/update/${this.props.character.id}`,
         {
             method: 'PUT',
-            body: JSON.stringify({ update: this.props.character.id }),
             headers: new Headers(
                 {'Content-Type': 'application/json',
                 'Authorization': this.props.token}
-                )
+                ),
+            body: JSON.stringify(
+                { 
+                    character:
+                    {
+                        characterName: this.state.characterName,
+                        class: this.state.class,
+                        race: this.state.race,
+                        proficiency: this.state.proficiency,
+                        background: this.state.class,
+                        level: this.state.level,
+                        health: this.state.health,
+                        armorclass: this.state.armorclass,
+                        initiative: this.state.initiative,
+                        speed: this.state.speed,
+                        hitdice: this.state.hitdice,
+                        deathsaves: this.state.deathsaves,
+                        personalitytraits: this.state.personalitytraits,
+                        bonds: this.state.bonds,
+                        ideals: this.state.ideals,
+                        flaws: this.state.flaws,
+                        strength: this.state.strength,
+                        strengthAbilityScore: this.state.strengthAbilityScore,
+                        dexterity: this.state.dexerity,
+                        dexerityAbilityScore: this.state.dexerityAbilityScore,
+                        constitution: this.state.constitution,
+                        constitutionAbilityScore: this.state.constitutionAbilityScore, 
+                        intelligence: this.state.intelligence,
+                        intelligenceAbilityScore: this.state.intelligenceAbilityScore,
+                        wisdom: this.state.wisdom,
+                        wisdomAbilityScore: this.state.wisdomAbilityScore,
+                        charisma: this.state.charisma,
+                        charismaAbilityScore: this.state.charismaAbilityScore,
+                        inventory: this.state.inventory,
+                        backstory: this.state.backstory
+                    }
+                }),
         })
         
     }

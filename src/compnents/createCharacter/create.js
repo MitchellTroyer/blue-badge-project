@@ -97,7 +97,7 @@ class Create extends Component
                             {'Content-Type' : 'application/json',
                             "Authorization" : this.props.token},
                             })
-                    .then(response => response.json())
+                    .then(response => response.json(), alert('character created'))
                     .catch(err => console.log(err))
                     
     }
@@ -139,9 +139,9 @@ class Create extends Component
                     </tr>
                     <tr className="stats">
                         <td className="blank"></td>
-                        <th>Health Points (HP)</th>
-                        <th>Hit Dice (HD)</th>
-                        <th>Death Saves (DS)</th>
+                        <th>Health Points</th>
+                        <th>Hit Dice</th>
+                        <th>Death Saves</th>
                         <th className="trait">Personality traits</th>
                         <th className="trait">Bonds</th>
                     </tr>

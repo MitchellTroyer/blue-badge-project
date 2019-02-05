@@ -28,7 +28,7 @@ class logIn extends Component
         if(!document.getElementById("username").value || !document.getElementById("password").value)
         {
             alert('username &/or password not filled in');
-        }else 
+        }else  
         {
             fetch(`${APIURL}/user/signIn`,
             {
