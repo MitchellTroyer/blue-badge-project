@@ -34,11 +34,13 @@ class logIn extends Component
             {
                 method: 'POST',
                     body: JSON.stringify(
-                        {user:
+                        {
+                            user:
                             {
-                            username: this.state.Username,
-                            password: this.state.Password
-                        }}),
+                                username: this.state.Username,
+                                password: this.state.Password
+                            } 
+                        }),
                         headers:
                         {'Content-Type' : 'application/Json'}
             }) 
