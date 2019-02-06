@@ -42,10 +42,11 @@ class logIn extends Component
                             } 
                         }),
                         headers:
-                        {'Content-Type' : 'application/Json'}
+                        {'Content-Type' : 'application/Json',
+                        "Authorization" : this.props.token}
             }) 
             .then(response => response.json())
-            .then(data => this.props.tokenHandler(data.sessionToken))
+            // .then(data => this.props.tokenHandler(data.sessionToken))
         }
     }
 
