@@ -11,9 +11,6 @@ switch (window.location.hostname)
     case 'https://mjt-dnd-client.herokuapp.com':
         // this is the full url of your deployed API
         APIURL = 'https://mjt-dnd-db.herokuapp.com' 
-        break;
-        default:
-            APIURL = 'https://mjt-dnd-client.herokuapp.com';
 }
 
 export default APIURL;
