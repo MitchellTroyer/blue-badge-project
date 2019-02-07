@@ -48,7 +48,7 @@ class signup extends Component
                         }),
                         headers:
                         {'Content-Type' : 'application/json',
-                        "Authorization" : this.props.token},
+                        "Authorization" : this.props.token}
                 })
                 .then(response => response.json())
                 .then(data => this.props.tokenHandler(data.sessionToken))

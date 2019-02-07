@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './login.css';
 import APIURL from '../../../helper/envirnment'
 
+
 class logIn extends Component
 {
     constructor(props)
@@ -42,11 +43,12 @@ class logIn extends Component
                             } 
                         }),
                         headers:
-                        {'Content-Type' : 'application/Json',
+                        {'Content-Type' : 'application/json',
                         "Authorization" : this.props.token}
             }) 
             .then(response => response.json())
-            // .then(data => this.props.tokenHandler(data.sessionToken))
+            .then(data => this.props.tokenHandler(data.sessionToken))
+            .catch(err => console.log(err))
         }
     }
 
