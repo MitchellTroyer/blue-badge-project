@@ -34,6 +34,7 @@ class signup extends Component
                 alert('form incomplete, please enter all information')
             }else
             {
+                event.preventDefault();
                 fetch(`${APIURL}/user/CreateUser`, 
                 {
                     method: 'POST',
@@ -52,13 +53,11 @@ class signup extends Component
                 .then(response => response.json())
                 .then(data => this.props.tokenHandler(data.sessionToken))
                 .catch(err => console.log(err))
-                alert('User Created')
             }
         }else
         {
             alert('your passwords do not match')
         }
-        event.preventDefault();
     }
 
     render()
