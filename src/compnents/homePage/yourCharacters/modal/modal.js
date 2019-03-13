@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import APIURL from '../../../../helper/envirnment';
 
-class CharModals extends Component {
+class CharModals extends Component { 
   constructor(props) 
   {
     super(props);
